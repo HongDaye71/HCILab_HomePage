@@ -1,4 +1,4 @@
-# :star: HCILab Homepage <br/>
+# :computer: HCILab Homepage <br/>
 Human-Computer Interaction Lab Homepage Renewal
 
 ## Description
