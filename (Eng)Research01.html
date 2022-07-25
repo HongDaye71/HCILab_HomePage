@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research01</title>
+    <link rel="stylesheet" href="Research01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="blackbox">
+            <div class="header">
+                <h1><a href="#">HCILAB</a></h1>
+                <div class="nav" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <!--메뉴바 닫기 아이콘-->
+                    <ul>
+                        <li><a href="./(Eng)Homepage.html">HOME</a></li>
+                        <li><a href="./(Eng)About.html">ABOUT</a></li>
+                        <li><a href="./(Eng)Member.html">MEMBER</a></li>
+                        <li><a href="./(Eng)Research.html">RESEARCH</a></li>
+                        <li><a href="./(Eng)Publication.html">PUBLICATION</a></li>
+                        <li><a href="./(Eng)Lecture.html">LECTURE</a></li>
+                        <li><a href="./(Eng)News.html">NEWS</a></li>
+                        <li><a href="./Homepage.html">KOREAN</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!--메뉴바 열기 아이콘-->
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="leftText">
+                    <h1>Research</h1>
+                    <p>Hanyang University. Human-Computer Interaction Lab</p>
+                </div>
+            </div>
+            <div class="right">
+                <i class="fas fa-file-alt"><p3> Old Topic01<br><br><br><br><br></p3></i>
+
+                <h1>Research</h1>
+                <p>HCI (Human-Computer Interaction)<br></p>
+                <p2>The Human-Computer Interaction Laboratory is studying computer-based technologies such as virtual reality, artificial intelligence, robots, and automated vehicle, and human behavior, cognition, emotion, brain, and bio-signals.These studies are conducted in two main directions, First, we want to study and help human physical and mental problems using human-computer interaction or computer technology.Second, we study the direction in which virtual reality, artificial intelligence, robot, and automobile technology should go based on our understanding of humans.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_12.png">
+                        <img src="BackgroundImage/Research_12_hover.png">
+                    </div>
+                </div>
+                
+                <p>Serious Games<br></p>
+                <p2>Serial Game refers to a game designed for a specific purpose rather than entertainment. Functional games are being studied and developed in a variety of ways, including health, promotion, education, management, medical care, advertising, and welfare.Among them, the human-computer interaction laboratory mainly studies health functional games, educational functional games, and therapeutic functional games.The picture below is a scene from a presentation practice game for students and an emotional cognitive training game for those who are not familiar with human emotions.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_13.png">
+                        <img src="BackgroundImage/Research_13_hover.png">
+                    </div>
+                </div>
+
+                <p>Medical Software and Others<br></p>
+                <p2>The human-computer interaction laboratory is researching and developing methodologies to induce changes in human cognition, emotion, and behavior and improve the quality of life through them.The picture below shows the execution screen of the medical software currently under development and various equipment under study.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_14.png">
+                        <img src="BackgroundImage/Research_14_hover.png">
+                    </div>
+                </div>
+
+                <!--************************************** Button **************************************-->
+                <div class="Button">
+                    <button type="button" onclick="location.href='./(Eng)Research.html'">Current Topic</button>
+                    <button type="button" onclick="location.href='./(Eng)Research02.html'">Old Topic02</button>
+                </div>
+            </div>
+
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <h4>Contact Us</h4>
+            <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+                Korea<br>Copyright ⓒ2015 Hanyang University. Human-Computer Interaction Lab. All rights
+                reserved.<br>책임자: 김광욱|
+                담당자:정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+            <div class="icons">
+                <i class="fab fa-youtube"
+                    onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+                <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+            </div>
+        </div>
+
+        <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!--Cube Rotation-->
+        <script>
+            let deg = 0;
+            setInterval(() => {
+                deg = deg - 90;
+                document.querySelector(".cube").style.transform =
+                    'rotateX(' + deg + 'deg)';
+            }, 1000)
+        </script>
+</body>
+
+</html>

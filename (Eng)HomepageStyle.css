@@ -1,0 +1,428 @@
+@font-face{
+    font-family :abster;
+    src:url("font/abster-webfont.woff") format('woff');
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@keyframes showArrow {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;}
+    50% {
+      opacity: .4;}
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;}
+  }
+
+/************************container1************************/
+
+.container .header .nav .fa-times{
+    visibility: hidden;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("BackgroundImage/LandingPage.jpg") no-repeat center / cover;
+    /*linear-gradient : 적용된 Html요소에 선형으로 gradient효과를 적용(색상지정점은 총 2개 필요) */
+}
+
+.container .header{
+    width: 95%; /*상단 메뉴바 영역지정*/
+    height: 80px;
+    display :flex;
+    justify-content: space-between;
+    margin: 0% auto; /*메뉴바 요소가 수평기준 중앙으로 오도록 설정*/ 
+    align-items : center; /*header에서 수직기준 가운데정렬 되도록 설정*/
+}
+
+.container .header h1 a{ /*상단로고*/ 
+    position: relative;
+    text-decoration: none;
+    color:white;
+    font-family:abster; 
+}
+
+.container .nav ul li{
+    display: inline-block; /*줄바꿈없이 나란히 배치*/
+    margin : 0 60px; /*세로, 가로방향*/
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.container .nav ul li a:hover{
+    color : tomato;
+}
+
+.container .hero{
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+    color :white;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero p{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .hero button{
+    text-decoration: none;
+    background: none;
+    border:2px solid tomato;
+    color : white;
+    padding : 15px 20px; /*parameter : 위,오른쪽,아래,왼쪽 padding값 지정*/
+    border-radius : 20px; 
+    outline: none; /*클릭 시 잔상을 제거하기 위함*/
+    margin-top: 30px; /*button위 텍스트와 간격을 주기위함*/
+    cursor : pointer;
+    transition:all .5s;/*입체적인 효과를 위해 delay적용*/
+}
+
+.container .hero button:hover{background-color:tomato;}
+
+.container .scrollArrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    margin-left: -12px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    animation: showArrow 2s infinite;
+    box-sizing: border-box;
+    opacity: 70%;
+  }
+
+/************************container2************************/
+
+.background{background-color: #fafafa;}
+.container2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.container2 h1{
+    font-size:40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #383838;
+}
+
+.container2 p{
+    color: #5e5e5e;
+    font-size:18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5%;
+}
+
+.container2 .col p{
+    color: #777;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container2 .col{
+    width: 60%;
+    height: auto;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    margin-left: 19%;
+    margin-right: 19%;
+    padding-top : 21px;
+    padding-bottom : 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing : border-box;
+    transition: 0.5s;
+    line-height: 25px;
+}
+
+.container2 .col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/********************************container3 box******************************** */
+.box a{text-decoration: none;}
+
+.container3{
+    width: 80%;
+    padding-top: 5px;
+    text-align: center;
+    margin: 0% auto;
+}
+.container3 .row{
+    width: 85%;
+    display: flex;
+    margin: 0% auto;
+    justify-content: space-between;
+}
+
+.container3 h1{
+    font-size:40px;
+    color: #383838;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;}
+
+.container3 p{
+    color: #5e5e5e;
+    font-size:18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2%;}
+
+.container3 .box{
+    border-radius: 5px;
+    width:750px;
+    height:610px;
+    background-color: white;
+    padding : 2%;
+}
+
+
+.container3 .box:hover{background-color: coral;}
+.container3 .box2:hover{background-color: coral;}
+
+.container3 .img-box img{
+    border-radius: 5px;
+    width:600px;
+    height: auto;
+}
+
+.container3 p2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    color: #383838;
+    font-weight: normal;
+}
+
+.container3 .text p:first-child{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: #383838;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.container3 .text p:last-child{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.img-box img:nth-child(2){display:none}
+.row :hover img:first-child{display:none}
+.row :hover img:nth-child(2){display:inline-block}
+
+.text p:last-child{display:none}
+.row :hover p:first-child{display:none}
+.row :hover p:last-child{display:inline-block}
+
+
+/************************footer************************/
+.footer{
+    width : 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 5%;
+}
+
+.footer h4{
+    margin-bottom: 15px;
+    margin-top: 22px;
+    font-weight: 600;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer p{
+    color: #5e5e5e;
+    font-size:14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+.icons .fab{
+    color:tomato;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+    font-size: 20px;
+}
+
+.icons .fas{
+    color:tomato;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+    font-size: 20px;
+}
+
+/************************Media************************/
+
+.header .fa{display: none;}
+
+@media(max-width : 1800px){ 
+    .container .nav ul li{
+        display: inline-block; /*줄바꿈없이 나란히 배치*/
+        margin : 0 20px; /*세로, 가로방향*/
+    }
+}
+
+@media(max-width : 700px){ 
+    .container .header .nav .fa-times{visibility: visible;}
+    
+    /************************Container1************************/
+    .container .hero h2{
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .container .hero p{font-size: 14px;}
+    .container .nav ul li{
+        display: block;
+        padding: 20px;}
+    .container .header h1 a{ /*상단로고*/ 
+        font-size: 20px;
+    }
+    .container .header{
+        height: 50px;
+        align-items:unset;
+    }
+    .container .nav{
+        position:absolute;
+        /*relative : parent, absolute : child로 가정했을 때, parent가 absolute의 영역을 제한*/
+        /*relative : 현재 위치 기준 상대값 조정*/
+        /*absolute : Parent 기준 상대값 조정*/
+        background: #f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2; /*숫자가 클수록 위로 올라가므로, 메뉴바가 최상단에 위치하도록 설정*/
+        transition: 1s;
+    }
+    .header .fa{
+        display: block;
+        color : white;
+        margin-top:15px;
+        margin-right:3px;
+        margin-left:10px;
+        font-size: 20px;
+        cursor:pointer;
+    }
+    .container .scrollArrow {
+        width: 16px;
+        height: 16px;}
+
+    /************************Container2************************/
+    .container2{padding-top: 50px;}
+    .container2 h1{font-size:24px;}
+    .container2 p{
+        font-size:12px;
+        margin-bottom: 5%;
+    }
+    
+    .container2 .col p{font-size:12px;}
+    
+    .container2 .col{
+        width: 100%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+        line-height: 21px;
+    }    
+    
+    /********************************container3 box******************************** */
+    .container3 .row{
+        width: 100%;
+        padding : 0%;
+    }
+    .container3 h1{font-size:25px;}
+    .container3 p{
+        font-size:12px;
+        margin-bottom: 5%;}
+    
+    .container3 .box{
+        width:300px;
+        height:735px;
+        padding : 3%;
+        margin-top: 10%;
+    }
+    
+    .container3 .img-box img{
+        border-radius: 5px;
+        width:270px;
+        height: auto;
+    }
+    
+    .container3 p2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        color: #383838;
+        font-weight: normal;
+    }
+    
+    .container3 .text p:first-child{
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 2%;
+    }
+    
+    .container3 .text p:last-child{
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 2%;
+    }
+    /************************footer************************/
+    .footer p{
+        font-size:11px;
+        line-height: 15px;
+        padding: 0% 8%;
+    }
+    .icons .fab{font-size: 18px;}
+    .icons .fas{font-size: 18px;}
+}
+
+@media(max-width : 1900px){
+    /********************************container3 box******************************** */
+    .container3 .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .container3 .box{margin-bottom: 5%;}
+}
+
+@media(max-height : 400px){ 
+    .container .hero{display: none;}
+}
+

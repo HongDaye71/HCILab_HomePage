@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!--ASCII : 영어만을 고려한 1byte길이의 인코딩 방식-->
+    <!--euc-kr : ASCII, 아스키 인코딩 방식을 확장한 2byte 인코딩 방식 (한글사용 가능 / 국가언어코드)-->
+    <!--UTF-8 : 3byte 인코딩 방식 (한글사용 가능 / Unicode)-->
+    <!--ABCD : 1byte, 8bit / 가나다라 : 2byte-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MetaTag : 
+        viewport(다양한 기기에서 실제 렌더링 되는 영역과 뷰포트의 크기를 조절할 수 있게 함
+        width=device-width(페이지 너비를 기기의 스크린 너비로 설정 = 렌더링 영역을 기기의 뷰포트와 일치시킴)-->
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="HomepageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="header">
+            <h1><a href="#">HCILAB</a></h1>
+            <div class="nav" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!--메뉴바 닫기 아이콘-->
+                <ul>
+                    <li><a href="./Homepage.html">HOME</a></li>
+                    <li><a href="./About.html">ABOUT</a></li>
+                    <li><a href="./Member.html">MEMBER</a></li>
+                    <li><a href="./Research.html">RESEARCH</a></li>
+                    <li><a href="./Publication.html">PUBLICATION</a></li>
+                    <li><a href="./Lecture.html">LECTURE</a></li>
+                    <li><a href="./News.html">NEWS</a></li>
+                    <li><a href="./(Eng)Homepage.html">ENGLISH</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!--메뉴바 열기 아이콘-->
+        </div>
+        <div class="hero">
+            <h2>HUMAN-COMPUTER INTERACTION LAB</h2>
+            <p>Hanyang University</p>
+            <button type="button" onclick="location.href='./Research.html'">WATHCH MORE</button>
+        </div>
+        <span class="scrollArrow"></span>
+    </div>
+
+    <div class="background">
+        <!--container02-->
+        <div class="container2">
+            <h1>About Us</h1>
+            <p>Introduction of Human-Computer Interaction Lab</p>
+
+            <div class="row">
+                <div class="col">
+                    <p>한양대학교 인간-컴퓨터 상호작용 연구실은 컴퓨터공학 기술과 이를 활용하는 인간에 대해 연구하고 있습니다. 이러한 연구는 크게 두 가지 방향으로 진행하고 있는데, 첫째로
+                        HCI나
+                        컴퓨터 기술을 활용하여 인간의 신체적, 정신적 문제에 대해 연구하고, 이를 돕고자 합니다. 둘째로 인간에 대한 이해를 바탕으로 기술이 나가야 할 방향에 대해서 연구하고자
+                        합니다.마지막으로 이러한 두 방향은 궁극적으로 서로 상호작용하여 기술이 인간을 돕고, 인간에 대한 이해가 기술의 가치를 재창조 할 수 있는 연구를 수행하고자 합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--container03-->
+        <div class="container3">
+            <h1>Research Area</h1>
+            <p>The main research area includes virtual reality technologies,
+                motion-capture, eye-tracking and human interaction system</p>
+
+            <div class="row">
+                <div class="box">
+                        <div class="img-box">
+                            <img src="BackgroundImage/JointAttention.png">
+                            <img src="BackgroundImage/JointAttention_hover.png">
+                            <div class="text">
+                                <p>Direction I : From Techonology to Human</p>
+                                <p>Direction I : From Techonology to Human</p>
+                            </div>
+                            <p2>기술이 인간을 돕는 첫 번째 방향의 대표적인 예로 본 연구실의 VR 강박증 연구를 들 수 있습니다. 가상의 공간 안에서 피험자의 행동을 볼 수 있는
+                                소프트웨어를
+                                개발하고, 이를 컴퓨터로 분석하여 특정 증상을 가지는 강박증 환자를 찾아내었습니다. 이러한 결과를 활용하면, 환자의 진단에도 도움을 줄 수 있고, 약물치료 등
+                                기존
+                                치료방법의 경과를 보기 위해서도 사용할 수 있습니다. 향후 연구에서는 지금까지의 환자 연구 경험을 치료 소프트웨어 개발에 더 주안 하여 확장하고자 합니다.
+                                예를 들어
+                                자폐 아동들의 사회적 상호작용을 훈련할 수 있는 발표 훈련 프로그램을 개발하였고, 여러 상호작용 결손 가운데, 눈맞춤 훈련만을 집중해서 할 수 있도록 하는
+                                프로그램을, 아이트랙킹과 아바타를 이용해서 개발하였습니다. 이러한 프로그램들을 확장하여, 자폐 아동들을 훈련하고 치료하는 프로그램을 계속 개발하고, 임상연구에
+                                적용하고자 합니다. 또한, 이러한 상호작용을 뇌졸증 환자등의 재활 치료에 활용하고 있습니다.
+                            </p2>
+                        </div>
+                </div>
+                <div class="box">
+                        <div class="img-box">
+                            <img src="BackgroundImage/RobotInteraction.png">
+                            <img src="BackgroundImage/RobotInteraction_hover.png">
+                            <div class="text">
+                                <p>Direction II : From Human Factors to Technology</p>
+                                <p>Direction II : From Human Factors to Technology</p>
+                            </div>
+                            <p2>저희 연구실의 두 번째 방향은 인간에 대한 이해를 바탕으로, HCI 기술을 평가하고, 가치를 재발견하고자 합니다. 예를 들어 VR 플랫폼 연구에서는, 현재
+                                사용중인
+                                가상현실 도구인 Desktop과 HMD, CAVE 시스템을 비교하였습니다. 기존 연구에서 측정하는 Accuracy와 Speed 외에 인간이 기술을 받아 들일
+                                때
+                                느끼는 면을 Arousal, Valence, Bio-signal, Presence, Simulator Sickness 등을 통해 측정하였습니다. 그 결과
+                                각각의
+                                시스템은 특별한 장단점을 가지는데, 예를 들어 CAVE system과 HMD system에서 유발하는 정서의 양적인 면은 같은데 반해, 질적인 방향은 서로
+                                반대로
+                                나오는 것을 확인 할 수 있었습니다. 이러한 연구를 통해 Interactive media가 인간의 정서에 미치는 방향성에 대해서 알 수 있었고, 이러한 결과는
+                                기술의
+                                선택과 유용한 어플리케이션 개발에 다시 사용할 수 있을 것입니다.</p2>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <h4>Contact Us</h4>
+            <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+                Korea<br>Copyright ⓒ
+                2015 Hanyang University. Human-Computer Interaction Lab. All rights reserved.<br>책임자: 김광욱| 담당자:
+                정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+            <div class="icons">
+                <i class="fab fa-youtube"
+                    onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+                <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--반응형 웹 : 하나의 웹사이트로 desktop, pc, smartphone등 접속하는 디스플레이 종류에 따라 화면의 크기가 자동으로 변하게 만든 웹페이지-->

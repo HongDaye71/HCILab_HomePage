@@ -1,0 +1,302 @@
+@font-face{
+    font-family :abster;
+    src:url("font/abster-webfont.woff") format('woff');}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@keyframes showText{
+    from {
+        transform: translateY(70px);
+        opacity:0;}
+    to{
+        transform: translateY(0px);
+        opacity:1;}
+}
+
+@keyframes showArrow {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;}
+    50% {opacity: .4;}
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;}
+  }
+
+/************************container************************/
+.container .header .nav .fa-times{
+    visibility: hidden;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+}
+.blackbox{
+    width:100%;
+    height:80px;
+    background-color: #303030;
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+.container .header{
+    width: 95%; /*상단 메뉴바 영역지정*/
+    height: 80px;
+    display :flex;
+    justify-content: space-between;
+    margin: 0% auto; /*메뉴바 요소가 수평기준 중앙으로 오도록 설정*/ 
+    align-items : center; /*header에서 수직기준 가운데정렬 되도록 설정*/
+}
+.container .header h1 a{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    font-family:abster; 
+}
+
+.container .nav ul li{
+    display: inline-block; /*줄바꿈없이 나란히 배치*/
+    margin : 0 60px; /*세로, 가로방향*/
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+.container .nav ul li a:hover{color :tomato;}
+
+/************************hero************************/
+
+.hero{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    animation: showText 2s;
+    display: flex;
+    justify-content: space-between;
+}
+
+/************************hero left************************/
+.left{
+    margin-left: 0%;
+    width:10%;
+    height: 100vh;
+    writing-mode: vertical-rl;
+    transform : rotate(180deg) ;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.leftText{
+    margin-top : 20%;
+    margin-right: 0.15%;
+}
+
+.left h1{
+    color: #383838;
+    font-size : 35px;
+    font-weight: 600;
+}
+
+.left p{
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ********************************hero right******************************** */
+.right{
+    width:90%;
+    height:100%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #383838;
+    background-color: #fafafa;
+    padding: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right h1{
+    margin-top:5%;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.right p{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 1%;}
+
+.box{
+    margin-top:3%;
+    width: 320px;
+    margin-bottom:3%;}
+
+.box img{
+    width: 70%;
+    border-radius: 50%;}
+
+.right p2{
+    color: #777777;
+    font-size:14px;
+    font-weight: 400;
+}
+
+/* ********************************Col 01******************************** */
+.Col01{
+    display: flex;
+    justify-content: space-between;
+}
+
+/************************footer************************/
+.footer{
+    width : 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 7%;
+}
+
+.footer h4{
+    margin-bottom: 15px;
+    margin-top: 22px;
+    font-weight: 600;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer p{
+    color: #5e5e5e;
+    font-size:14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+.icons .fab{
+    color:tomato;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+    font-size: 20px;
+}
+
+.icons .fas{
+    color:tomato;
+    margin: 0 13px;
+    cursor: pointer;
+    padding:18px 0;
+    font-size: 20px;
+}
+
+/************************Media************************/
+.header .fa{
+    display: none;
+}
+
+@media(max-width : 1800px){ 
+    .container .nav ul li{
+        display: inline-block; /*줄바꿈없이 나란히 배치*/
+        margin : 0 20px; /*세로, 가로방향*/
+    }
+}
+
+@media(max-width : 700px){ 
+    .container .header .nav .fa-times{visibility: visible;}
+    
+    /************************Container1************************/
+    .container .nav ul li{
+        display: block;
+        padding: 20px;}
+    .container .header h1 a{ /*상단로고*/ 
+        font-size: 20px;}
+    .container .header{
+        height: 50px;
+        align-items:unset;}
+    .container .nav{
+        position:absolute;
+        background: #f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2; 
+        transition: 1s;}
+    .header .fa{
+        display: block;
+        color : white;
+        margin-top:15px;
+        margin-right:3px;
+        margin-left:10px;
+        font-size: 20px;
+        cursor:pointer;}
+
+    .blackbox{height:50px;}
+
+    /************************hero************************/
+    .hero{background-color: #fafafa;}
+
+    /************************hero left************************/
+    .left{display: none;}
+
+    /* ********************************hero right******************************** */
+    .right{
+        height:100%;
+        padding-top: 30%;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 8%;
+    }
+
+    .right h1{
+        font-size: 25px;
+        margin-bottom: 10%;
+    }
+    .right img{
+        width: 100%;
+        margin-bottom: 25%;
+    }
+    .right p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .right p2{font-size:12px;}
+    .box{width: 250px;}
+    .box img{
+        width: 70%;
+        border-radius: 50%;
+        margin-bottom:0%;}
+    .right h1{
+        margin-top:4%;
+        margin-bottom: 3%;}
+
+    /************************footer************************/
+    .footer p{
+        font-size:11px;
+        line-height: 15px;
+        padding: 0% 8%;
+    }
+    .icons .fab{font-size: 18px;}
+    .icons .fas{font-size: 18px;}
+}
+
+@media(max-width : 1600px){ 
+    .container .left{display: none;}
+    .right {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;}
+    .box{margin-bottom:10%;}
+}
+@media(max-height : 600px){ 
+    .container .hero{display: none;}
+}

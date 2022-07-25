@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsSub_19</title>
+    <link rel="stylesheet" href="NewsSub_Short.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="blackbox">
+            <div class="header">
+                <h1><a href="#">HCILAB</a></h1>
+                <div class="nav" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <!--메뉴바 닫기 아이콘-->
+                    <ul>
+                        <li><a href="../Homepage.html">HOME</a></li>
+                        <li><a href="../About.html">ABOUT</a></li>
+                        <li><a href="../Member.html">MEMBER</a></li>
+                        <li><a href="../Research.html">RESEARCH</a></li>
+                        <li><a href="../Publication.html">PUBLICATION</a></li>
+                        <li><a href="../Lecture.html">LECTURE</a></li>
+                        <li><a href="../News.html">NEWS</a></li>
+                        <li><a href="../(Eng)Homepage.html">ENGLISH</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!--메뉴바 열기 아이콘-->
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="leftText">
+                    <h1>News</h1>
+                    <p>Hanyang University. Human-Computer Interaction Lab</p>
+                </div>
+            </div>
+            <div class="right">
+                <h1>19</h1>
+                <h2>Publication update</h2>
+                <p>박종현 학생이 '스마트폰을 이용한 사진 기반 가상 현실 노출 치료 시스템 개발 및 시험적 적용' 논문을 한국컴퓨터그래픽스학회 논문지에 출간하였습니다.</p>
+
+                <div class="cube">
+                    <img src="../BackgroundImage/button_front_01.png" alt="front01">
+                    <img src="../BackgroundImage/button_back_01.png" alt="back01">
+                    <img src="../BackgroundImage/button_front_02.png" alt="front02">
+                    <img src="../BackgroundImage/button_back_02.png" alt="back02">
+                </div>
+
+                <a href="NewsSub21.html"><br><br><br>21.&nbsp;&nbsp;	Review of CYPSY 2016<br><br></a>
+                <a href="NewsSub20.html">20.&nbsp;&nbsp;Publication update<br><br></a>
+                <div class="on"><a href="#">19.&nbsp;&nbsp;Publication Update<br><br></a></div>
+                <a href="NewsSub18.html">18.&nbsp;&nbsp;CyberTherapy & Social Networking Conference Presentation<br><br></a>
+                <a href="NewsSub17.html">17.&nbsp;&nbsp;(수상) 김광욱 교수님 강의 우수 교수 선정<br><br></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <h4>Contact Us</h4>
+        <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+            Korea<br>Copyright ⓒ
+            2015 Hanyang University. Human-Computer Interaction Lab. All rights reserved.<br>책임자: 김광욱|
+            담당자:
+            정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+        <div class="icons">
+            <i class="fab fa-youtube"
+                onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+            <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+        </div>
+    </div>
+
+    <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Cube Rotation-->
+    <script>
+        let deg = 0;
+        setInterval(() => {
+            deg = deg - 90;
+            document.querySelector(".cube").style.transform =
+                'rotateX(' + deg + 'deg)';
+        }, 1000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research02</title>
+    <link rel="stylesheet" href="Research02.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="blackbox">
+            <div class="header">
+                <h1><a href="#">HCILAB</a></h1>
+                <div class="nav" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <!--메뉴바 닫기 아이콘-->
+                    <ul>
+                        <li><a href="./Homepage.html">HOME</a></li>
+                        <li><a href="./About.html">ABOUT</a></li>
+                        <li><a href="./Member.html">MEMBER</a></li>
+                        <li><a href="./Research.html">RESEARCH</a></li>
+                        <li><a href="./Publication.html">PUBLICATION</a></li>
+                        <li><a href="./Lecture.html">LECTURE</a></li>
+                        <li><a href="./News.html">NEWS</a></li>
+                        <li><a href="./(Eng)Homepage.html">ENGLISH</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!--메뉴바 열기 아이콘-->
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="leftText">
+                    <h1>Research</h1>
+                    <p>Hanyang University. Human-Computer Interaction Lab</p>
+                </div>
+            </div>
+            <div class="right">
+                <i class="fas fa-file-alt"><p3> Old Topic02<br><br><br><br><br></p3></i>
+
+                <h1>Research</h1>
+                <p>Effect of Human-Computer Interaction Platforms (e.g., virtual reality platform)<br></p>
+                <p2>The goal of this project is to investigate the effects of different human-computer interaction platforms (i.e., virtual environment technologies: desktop, head mounted display, or fully immersive platforms) on human’s cognition, emotion, and behavior. Our findings suggest that different VE systems may be appropriate for different scientific purposes when studying stress reactivity using emotionally evocative tasks.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_08.png">
+                        <img src="BackgroundImage/Research_08_hover.png">
+                    </div>
+                </div>
+
+                <p>Human-Computer Interaction (HCI) Technology for People with Autism Spectrum Disorders<br></p>
+                <p2>Research on joint attention has played a significant role in defining critical features of the social-cognitive development of children with Autism Spectrum Disorders (ASD). We developed virtual reality paradigm that integrates eye-tracking and virtual avatar technology to study about ASD.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_09.png">
+                        <img src="BackgroundImage/Research_09_hover.png">
+                    </div>
+                </div>
+
+                <p>Computer-based Behavioral Measure for People with Obsessive-Compulsive Disorder<br></p>
+                <p2>Easy to administer behavioral measures are needed to improve the assessment of this hallmark feature of psychiatry disorder. We recently developed a new computer-based behavioral assessment of obsessive-compulsive disorder (OCD). Our new behavioral measure offers a novel, objective, and ecologically valid measure of checking behaviors in a sample of adults with OCD.<br><br></p2>
+                <div class="box">
+                    <div class="img_box">
+                        <img src="BackgroundImage/Research_10.png">
+                        <img src="BackgroundImage/Research_10_hover.png">
+                    </div>
+                </div>
+
+                <!--************************************** Button **************************************-->
+                <div class="Button">
+                    <button type="button" onclick="location.href='./Research.html'">Current Topic</button>
+                    <button type="button" onclick="location.href='./Research01.html'">Old Topic01</button>
+                </div>
+            </div>
+
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <h4>Contact Us</h4>
+            <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+                Korea<br>Copyright ⓒ2015 Hanyang University. Human-Computer Interaction Lab. All rights
+                reserved.<br>책임자: 김광욱|
+                담당자:정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+            <div class="icons">
+                <i class="fab fa-youtube"
+                    onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+                <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+            </div>
+        </div>
+
+        <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <!--Cube Rotation-->
+        <script>
+            let deg = 0;
+            setInterval(() => {
+                deg = deg - 90;
+                document.querySelector(".cube").style.transform =
+                    'rotateX(' + deg + 'deg)';
+            }, 1000)
+        </script>
+</body>
+
+</html>

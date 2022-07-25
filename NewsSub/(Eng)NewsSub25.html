@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsSub_25</title>
+    <link rel="stylesheet" href="NewsSub_Short.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="blackbox">
+            <div class="header">
+                <h1><a href="#">HCILAB</a></h1>
+                <div class="nav" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <!--메뉴바 닫기 아이콘-->
+                    <ul>
+                        <li><a href="../Homepage.html">HOME</a></li>
+                        <li><a href="../About.html">ABOUT</a></li>
+                        <li><a href="../Member.html">MEMBER</a></li>
+                        <li><a href="../Research.html">RESEARCH</a></li>
+                        <li><a href="../Publication.html">PUBLICATION</a></li>
+                        <li><a href="../Lecture.html">LECTURE</a></li>
+                        <li><a href="../News.html">NEWS</a></li>
+                        <li><a href="../(Eng)Homepage.html">ENGLISH</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!--메뉴바 열기 아이콘-->
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="leftText">
+                    <h1>News</h1>
+                    <p>Hanyang University. Human-Computer Interaction Lab</p>
+                </div>
+            </div>
+            <div class="right">
+                <h1>25</h1>
+                <h2>Publication Updates</h2>
+                <p> -   Kim, H., Park, J., & Kim, K. (2017). Comparison of spatial learning and memory strategies using HMD-RAM, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/>
+                  
+                -   Kim, M., Kim, C., & Kim, K. (2017).  Comparison Research between Human-Robot Interaction and Human-Human Interaction: focusing on Joint Attention, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/>
+                  
+                -   Kim, C., Kim, M., & Kim, K. (2017).  A Comparative Research on the Eye-tracking Method and Gaze-contigent Paradigm Method for Emotional Recognition, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/>
+                  
+                -   Jung, M., Kim, M., & Kim, K. (2017).  Research on interaction methods and types for human-robot interaction, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/>
+                  
+                -   Heo, J., Kim, E., & Kim, K. (2017).  Comparison of ADHD Children and Healthy Control using Joint Attention Virtual Classroom, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/>
+                  
+                -   Park, J., Park, J., & Kim, K. (2017).  Research on Arousal and Valence using Smartphone-based Exposure System, HCI Korea 2017, 국내, 2017.02.08~2017.02.10.<br/><br/></p>
+
+                <div class="cube">
+                    <img src="../BackgroundImage/button_front_01.png" alt="front01">
+                    <img src="../BackgroundImage/button_back_01.png" alt="back01">
+                    <img src="../BackgroundImage/button_front_02.png" alt="front02">
+                    <img src="../BackgroundImage/button_back_02.png" alt="back02">
+                </div>
+
+                <a href="NewsSub27.html"><br><br><br>27.&nbsp;&nbsp;	찾아 오는 길<br><br></a>
+                <a href="NewsSub26.html">26.&nbsp;&nbsp;CYPSY 22 conference presentation<br><br></a>
+                <div class="on"><a href="#">25.&nbsp;&nbsp;Publication Update<br><br></a></div>
+                <a href="NewsSub24.html">24.&nbsp;&nbsp;Review of HCIK 2017 <br><br></a>
+                <a href="NewsSub23.html">23.&nbsp;&nbsp;[수상] 김현정 석사과정 HCI 2017 학술대회 BEST PAPER AWARD 수상<br><br></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <h4>Contact Us</h4>
+        <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+            Korea<br>Copyright ⓒ
+            2015 Hanyang University. Human-Computer Interaction Lab. All rights reserved.<br>책임자: 김광욱|
+            담당자:
+            정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+        <div class="icons">
+            <i class="fab fa-youtube"
+                onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+            <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+        </div>
+    </div>
+
+    <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--Cube Rotation-->
+    <script>
+        let deg = 0;
+        setInterval(() => {
+            deg = deg - 90;
+            document.querySelector(".cube").style.transform =
+                'rotateX(' + deg + 'deg)';
+        }, 1000)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="News.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="header">
+            <h1><a href="#">HCILAB</a></h1>
+            <div class="nav" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./(Eng)Homepage.html">HOME</a></li>
+                    <li><a href="./(Eng)About.html">ABOUT</a></li>
+                    <li><a href="./(Eng)Member.html">MEMBER</a></li>
+                    <li><a href="./(Eng)Research.html">RESEARCH</a></li>
+                    <li><a href="./(Eng)Publication.html">PUBLICATION</a></li>
+                    <li><a href="./(Eng)Lecture.html">LECTURE</a></li>
+                    <li><a href="./(Eng)News.html">NEWS</a></li>
+                    <li><a href="./Homepage.html">KOREAN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!--메뉴바 열기 아이콘-->
+        </div>
+        <div class="hero">
+            <div class="flip_btn">
+                <div class="front">NEWS</div>
+                <div class="back">Click To Watch More</div>
+            </div>
+
+            <div class="NewsBoxText">
+                <a href="./(Eng)NewsSub/NewsSub10.html">10.&nbsp;&nbsp;Review of KCGS (한국 컴퓨터 그래픽스 학회) 2015<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub9.html">9.&nbsp;&nbsp;[수상] 장원철 석사과정 한국컴퓨터그래픽스 학술대회 우수논문상(구현) 수상<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub8.html">8.&nbsp;&nbsp;Review of CHI 2015<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub7.html">7.&nbsp;&nbsp;Review of IEEE VR 2015<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub6.html">6.&nbsp;&nbsp;Updated papers<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub5.html">5.&nbsp;&nbsp;(기사) HCI 중 가상현실 및 적용분야 관련<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub4.html">4.&nbsp;&nbsp;(Key Research Article 선정) A virtual joy-stick study<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub3.html">3.&nbsp;&nbsp;(학술대회)ACM SIGCHI - Computer Human Interaction<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub2.html">2.&nbsp;&nbsp;(10% Journal) Publication Update<br><br><br></a>
+                <a href="./(Eng)NewsSub/NewsSub1.html">1.&nbsp;&nbsp;(20% Journal) Publication Update<br><br><br></a>
+                <div class="Paging">
+                    <ul>
+                        <li><a href="./(Eng)News.html">1</a></li>
+                        <li><a href="./(Eng)News02.html">2</a></li>
+                        <li class="on"><a href="./(Eng)News03.html">3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h4>Contact Us</h4>
+        <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+            Korea<br>Copyright ⓒ
+            2015 Hanyang University. Human-Computer Interaction Lab. All rights reserved.<br>책임자: 김광욱| 담당자:
+            정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+        <div class="icons">
+            <i class="fab fa-youtube"
+                onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+            <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+        </div>
+    </div>
+
+    <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+
+</html>

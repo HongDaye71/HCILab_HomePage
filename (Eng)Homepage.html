@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!--ASCII : 영어만을 고려한 1byte길이의 인코딩 방식-->
+    <!--euc-kr : ASCII, 아스키 인코딩 방식을 확장한 2byte 인코딩 방식 (한글사용 가능 / 국가언어코드)-->
+    <!--UTF-8 : 3byte 인코딩 방식 (한글사용 가능 / Unicode)-->
+    <!--ABCD : 1byte, 8bit / 가나다라 : 2byte-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MetaTag : 
+        viewport(다양한 기기에서 실제 렌더링 되는 영역과 뷰포트의 크기를 조절할 수 있게 함
+        width=device-width(페이지 너비를 기기의 스크린 너비로 설정 = 렌더링 영역을 기기의 뷰포트와 일치시킴)-->
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="(Eng)HomepageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4ddf4c1ebf.js" crossorigin="anonymous"></script>
+    <!--fontawesome사용-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--mobile 화면 내 메뉴바 닫기버튼-->
+
+</head>
+
+<body>
+    <!--container01-->
+    <div class="container">
+        <div class="header">
+            <h1><a href="#">HCILAB</a></h1>
+            <div class="nav" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!--메뉴바 닫기 아이콘-->
+                <ul>
+                    <li><a href="./(Eng)Homepage.html">HOME</a></li>
+                    <li><a href="./(Eng)About.html">ABOUT</a></li>
+                    <li><a href="./(Eng)Member.html">MEMBER</a></li>
+                    <li><a href="./(Eng)Research.html">RESEARCH</a></li>
+                    <li><a href="./(Eng)Publication.html">PUBLICATION</a></li>
+                    <li><a href="./(Eng)Lecture.html">LECTURE</a></li>
+                    <li><a href="./(Eng)News.html">NEWS</a></li>
+                    <li><a href="./Homepage.html">KOREAN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!--메뉴바 열기 아이콘-->
+        </div>
+        <div class="hero">
+            <h2>HUMAN-COMPUTER INTERACTION LAB</h2>
+            <p>Hanyang University</p>
+            <button type="button" onclick="location.href='./(Eng)Research.html'">WATHCH MORE</button>
+        </div>
+        <span class="scrollArrow"></span>
+    </div>
+
+    <div class="background">
+        <!--container02-->
+        <div class="container2">
+            <h1>About Us</h1>
+            <p>Introduction of Human-Computer Interaction Lab</p>
+
+            <div class="row">
+                <div class="col">
+                    <p>Human-Computer Interaction Lab. (HCI Lab.) is studying computer-based technologies such as virtual reality, graphics, robots, automobiles, and human behavior, cognition, emotion, brain, and biological signals. These studies are proceeding in two major directions. First, we will use HCI or computer technology to study and help people's physical and mental problems. Second, based on the understanding of human beings, we want to study the direction of virtual reality, robot, and automobile technology. These two directions ultimately interact with each other, and we want to carry out research that technology can heal humans, and human understanding can recreate the value of technology.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--container03-->
+        <div class="container3">
+            <h1>Research Area</h1>
+            <p>The main research area includes virtual reality technologies,
+                motion-capture, eye-tracking and human interaction system</p>
+
+            <div class="row">
+                <div class="box">
+                        <div class="img-box">
+                            <img src="BackgroundImage/JointAttention.png">
+                            <img src="BackgroundImage/JointAttention_hover.png">
+                            <div class="text">
+                                <p>Direction I : From Techonology to Human</p>
+                                <p>Direction I : From Techonology to Human</p>
+                            </div>
+                            <p2>The first example of helping humans with technology is VR-based patient research. We observed patient behavior through a virtual reality-based platform and analyzed behavior patterns to identify patients with obsessive-compulsive disorder. This platform is helpful in diagnosing patients and can be used to see the progress of existing treatment methods such as drug treatment. Furthermore, based on this research experience, we developed software for patient groups with different diseases.We have developed a joint attention program, a representative interaction, to improve the social interaction ability of children with Autism-Spectrum Disorder (ASD). This program was developed using eye/gaze tracking, virtual reality, and virtual avatar. The results of this study are progressing with two potentials for development. First of all, the program is expanding for social and functional training of children with ASD. The expanded program is applied and used in clinical research. Second, clinical experiences in this study are used for the rehabilitation of stroke patients with interaction problems.
+                            </p2>
+                        </div>
+                </div>
+                <div class="box">
+                        <div class="img-box">
+                            <img src="BackgroundImage/RobotInteraction.png">
+                            <img src="BackgroundImage/RobotInteraction_hover.png">
+                            <div class="text">
+                                <p>Direction II : From Human Factors to Technology</p>
+                                <p>Direction II : From Human Factors to Technology</p>
+                            </div>
+                            <p2>The second direction of our lab is to evaluate human-computer interactio technology and rediscover its value based on understanding of humans. For example, in a VR platform study, desktop, HMD, and cave systems were compared, and in addition to Accuracy and Speed measured in previous studies, Arousal, Valence, Bio-signal, Presence, Simulator Sickness, etc. were measured together.And as a result, it could be verified the advantages and disadvantages of each system, such as the quantitative aspects of emotions caused by the save system and the HMD system are the same, but the qualitative directions are reversed. The results of these studies suggest the direction of interactive media on human emotions and will be able to be used again for technology selection and useful application development.</p2>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <h4>Contact Us</h4>
+            <p>Hanyang University R&D building 709<br>133-791, 222, Wangsimni-ro, Sung-Dong Gu, Seoul,
+                Korea<br>Copyright ⓒ
+                2015 Hanyang University. Human-Computer Interaction Lab. All rights reserved.<br>책임자: 김광욱| 담당자:
+                정면걸(wjdausrjf@naver.com)| 개인정보처리방침 | 이메일무단 수집거부</p>
+            <div class="icons">
+                <i class="fab fa-youtube"
+                    onclick="location.href='https://www.youtube.com/channel/UCIFKC8R-hMu11BtbgP8RNeg'"></i>
+                <i class="fas fa-school" onclick="location.href='https://www.hanyang.ac.kr/'"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--메뉴바 닫기 및 열기 아이콘 JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--반응형 웹 : 하나의 웹사이트로 desktop, pc, smartphone등 접속하는 디스플레이 종류에 따라 화면의 크기가 자동으로 변하게 만든 웹페이지-->
